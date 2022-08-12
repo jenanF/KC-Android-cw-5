@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/my1photo"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/firsttextView"
+        android:layout_width="356dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="80dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:gravity="center_horizontal"
+        android:text="Welcome!"
+        android:textSize="60sp" />
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="250dp"
+        android:layout_height="172dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@drawable/person" />
+
+    <TextView
+        android:id="@+id/Uploadimage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-smallcaps"
+        android:gravity="center_horizontal"
+        android:text="Upload image "
+        android:textColor="#101010"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/sectextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#000000"
+        android:fontFamily="sans-serif-smallcaps"
+        android:gravity="center_horizontal"
+        android:shadowColor="@color/black"
+        android:text="Please enter your personal information:"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/PersonName"
+        android:layout_width="367dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/et1border"
+        android:ems="10"
+        android:fontFamily="sans-serif-smallcaps"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:paddingLeft="15dp"
+        android:textColor="@color/black"
+        android:textColorHint="#777575" />
+
+    <EditText
+        android:id="@+id/PersonAge"
+        style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox"
+        android:layout_width="367dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/et1border"
+        android:ems="10"
+        android:fontFamily="sans-serif-smallcaps"
+        android:hint="Age"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:paddingLeft="15dp"
+        android:textColor="@color/black"
+        android:textColorHint="#777575" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="214dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/black"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Next"
+        android:enabled="false"
+        android:textSize="20sp" />
+
+
+</LinearLayout>
